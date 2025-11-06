@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Schedule - Duo Name</title>
+  <title>Live Schedule - ENYANA</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/lang.js" defer></script>
 </head>
 <body>
 
 <header>
-  <h1 class="lang" data-ja="ライブスケジュール" data-en="Live Schedule"></h1>
-  <nav>
-    <a href="index.html" class="lang" data-ja="ホーム" data-en="Home"></a>
-    <a href="live.html" class="lang" data-ja="ライブ" data-en="Live"></a>
-    <a href="contact.html" class="lang" data-ja="コンタクト" data-en="Contact"></a>
-  </nav>
+  <div class="header-inner">
+    <h1 class="lang" data-ja="ライブスケジュール" data-en="Live Schedule"></h1>
+    <nav>
+      <a href="index.html" class="lang" data-ja="ホーム" data-en="Home"></a>
+      <a href="live.html" class="lang" data-ja="ライブ" data-en="Live"></a>
+      <a href="contact.html" class="lang" data-ja="コンタクト" data-en="Contact"></a>
+    </nav>
+  </div>
   <div class="lang-switch">
     <button onclick="setLanguage('ja')">日本語</button>
     <button onclick="setLanguage('en')">English</button>
@@ -23,23 +25,33 @@
 </header>
 
 <main>
-  <table>
-    <tr>
-      <th class="lang" data-ja="日付" data-en="Date"></th>
-      <th class="lang" data-ja="会場" data-en="Venue"></th>
-      <th class="lang" data-ja="詳細" data-en="Details"></th>
-    </tr>
-    <tr>
-      <td>2026/4/4（予定）</td>
-      <td>池袋 Apple Jump</td>
-      <td>変更になる場合があります。詳細はアーティストSNS、<a href="https://applejump.net/">お店のホームページ</a>でご確認ください。</a></td>
-    </tr>
-    <tr>
-      <td>未定</td>
-      <td>未定</td>
-      <td><a href="#"></a></td>
-    </tr>
-  </table>
+  <section class="live-section fade-in">
+    <h2 class="lang" data-ja="ライブスケジュール" data-en="Live Schedule"></h2>
+    <table class="live-table">
+      <thead>
+        <tr>
+          <th class="lang" data-ja="日付" data-en="Date"></th>
+          <th class="lang" data-ja="会場" data-en="Venue"></th>
+          <th class="lang" data-ja="詳細" data-en="Details"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2026/4/4（予定）</td>
+          <td>池袋 Apple Jump</td>
+          <td>変更になる場合があります。詳細はアーティストSNSまたは
+            <a href="https://applejump.net/" target="_blank" rel="noopener noreferrer">お店のホームページ</a>
+            でご確認ください。
+          </td>
+        </tr>
+        <tr>
+          <td>未定</td>
+          <td>未定</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 </main>
 
 <footer>
