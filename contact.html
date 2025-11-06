@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Duo Name</title>
+  <title>Contact - ENYANA</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/lang.js" defer></script>
 </head>
 <body>
 
 <header>
-  <h1 class="lang" data-ja="お問い合わせ" data-en="Contact"></h1>
-  <nav>
-    <a href="index.html" class="lang" data-ja="ホーム" data-en="Home"></a>
-    <a href="live.html" class="lang" data-ja="ライブ" data-en="Live"></a>
-    <a href="contact.html" class="lang" data-ja="コンタクト" data-en="Contact"></a>
-  </nav>
+  <div class="header-inner">
+    <h1 class="lang" data-ja="お問い合わせ" data-en="Contact"></h1>
+    <nav>
+      <a href="index.html" class="lang" data-ja="ホーム" data-en="Home"></a>
+      <a href="live.html" class="lang" data-ja="ライブ" data-en="Live"></a>
+      <a href="contact.html" class="lang" data-ja="コンタクト" data-en="Contact"></a>
+    </nav>
+  </div>
   <div class="lang-switch">
     <button onclick="setLanguage('ja')">日本語</button>
     <button onclick="setLanguage('en')">English</button>
@@ -23,9 +25,34 @@
 </header>
 
 <main>
+  <section class="contact-section fade-in">
+    <p class="lang"
+       data-ja="出演依頼・お問い合わせはアーティストSNSまでお願いいたします。デュオに関するお問い合わせはどちらのメンバーにいただいてもかまいません。"
+       data-en="For performance requests and inquiries, please contact the artist via their social media. Inquiries regarding the duo may be directed to either member.">
+    </p>
 
-  <h4 class="lang" data-ja="出演依頼・お問い合わせはアーティストSNSまでお願いいたします。デュオに関するお問い合わせはどちらのメンバーにいただいてもかまいません。" data-en="For performance requests and inquiries, please contact the artist via their social media. Inquiries regarding the duo may be directed to either member."></h4>
+    <div class="contact-links">
+      <div class="member-contact">
+        <p><strong class="lang" data-ja="EMiKO VOiCE" data-en="EMiKO VOiCE"></strong></p>
+        <p class="sns-links">
+          <a href="https://www.instagram.com/emiko_voice" target="_blank" rel="noopener noreferrer">Instagram</a> |
+          <a href="https://www.youtube.com/channel/UCB4Pq8kYMxBcg6kEQ9uMgZg" target="_blank" rel="noopener noreferrer">YouTube</a> |
+          <a href="https://www.facebook.com/emiko.voice" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </p>
+      </div>
 
+      <div class="member-contact">
+        <p>
+          <strong class="lang" data-ja="柳原由佳" data-en="Yuka Yanagihara"></strong>
+        </p>
+        <p class="sns-links">
+          <a href="https://www.instagram.com/yukayanagiharapiano/" target="_blank" rel="noopener noreferrer">Instagram</a> |
+          <a href="https://www.youtube.com/@YukaYanagiharaPiano" target="_blank" rel="noopener noreferrer">YouTube</a> |
+          <a href="https://www.facebook.com/yuka.yanagihara.79" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
